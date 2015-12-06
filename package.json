@@ -1,7 +1,7 @@
 {
   "name": "jscow-panel",
   "description": "jsCow - Panel - Javascript Component Framework",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "GPL-3.0+",
   "readme": "README.md",
   "author": "Mario Linz <jscow@gmx.de>",
@@ -15,6 +15,7 @@
     "grunt": "latest",
     "grunt-cli": "latest",
     "grunt-contrib-clean": "latest",
+    "grunt-contrib-jshint": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-watch": "latest",
