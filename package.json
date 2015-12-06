@@ -1,7 +1,7 @@
 {
-  "name": "jscow-panel",
+  "name": "jscow-button",
   "description": "jsCow - Panel - Javascript Component Framework",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "GPL-3.0+",
   "readme": "README.md",
   "author": "Mario Linz <jscow@gmx.de>",
@@ -20,10 +20,17 @@
     "grunt-contrib-watch": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-compress": "latest",
-    "grunt-contrib-jshint": "latest"
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-yuidoc": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "jscow": "latest",
+    "jscow-theme": "latest",
+    "jquery": "latest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsCow/jscow-panel.git"
+    "url": "https://github.com/jsCow/jscow-button.git"
   }
 }

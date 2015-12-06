@@ -1,0 +1,345 @@
+{
+    "project": {
+        "name": "jscow-button",
+        "description": "jsCow - Panel - Javascript Component Framework",
+        "version": "1.0.1",
+        "url": ""
+    },
+    "files": {
+        "src\\jscow\\components\\panel.js": {
+            "name": "src\\jscow\\components\\panel.js",
+            "modules": {},
+            "classes": {
+                "jsCow.res.components.panel": 1,
+                "jsCow.res.model.panel": 1,
+                "jsCow.res.view.panel": 1,
+                "jsCow.res.controller.panel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "jsCow.res.components.panel": {
+            "name": "jsCow.res.components.panel",
+            "shortname": "jsCow.res.components.panel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 1,
+            "description": "jsCow panel component is a reusable component used in client side jsCow applications. \nA panel is a component, which enables users to collect any components in a collapsable group component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the main class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.model.panel": {
+            "name": "jsCow.res.model.panel",
+            "shortname": "jsCow.res.model.panel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 151,
+            "description": "Represents the model class of the jsCow panel component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the model class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.view.panel": {
+            "name": "jsCow.res.view.panel",
+            "shortname": "jsCow.res.view.panel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 206,
+            "description": "Represents the view class of the jsCow button component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the view class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.controller.panel": {
+            "name": "jsCow.res.controller.panel",
+            "shortname": "jsCow.res.controller.panel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 318,
+            "description": "Represents the controller class of the jsCow button component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the controller class of the component",
+            "is_constructor": 1
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 11,
+            "description": "Will be triggert when toggle the state (collapsed | open) of the panel.",
+            "itemtype": "event",
+            "name": "toggle",
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 15,
+            "description": "Will be triggert when the state of the panel is set to collapse.",
+            "itemtype": "event",
+            "name": "collapse",
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 19,
+            "description": "Will be triggert when the state of the panel is set to open.",
+            "itemtype": "event",
+            "name": "open",
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 27,
+            "description": "The init method will be called by initializing the component. \nThe model, view and controller should be set within this method.\n\t\t\n\t\tthis.addController(jsCow.res.controller.button);\n\t\tthis.addModel(jsCow.res.model.button);\n\t\tthis.addView(jsCow.res.view.button);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 49,
+            "description": "This method is a user interaction method to set the title of the panel.\n\t  \t\n\t  \t// New panel instance with a default title\n\t  \tvar panel1 = jsCow.get(jsCow.res.components.panel, { \n\t\t\ttitle: 'Panel 1 - Title'\n\t\t});\n\t\t\n\t  \t// Set panel title by method\n\t  \tbtn.title('My new panel title');",
+            "itemtype": "method",
+            "name": "title",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "Title of the panel.",
+                    "type": "String"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 78,
+            "description": "This method is a user interaction method to set the state of the panel.\n\t  \t\n\t  \t// New panel instance with a default state collapsed\n\t  \tvar panel1 = jsCow.get(jsCow.res.components.panel, { \n\t\t\ttitle: 'CollapsedPanel',\n\t\t\tcollapse: true\n\t\t});\n\t\t\n\t  \t// Set panel state to collapsed\n\t  \tpanel1.collapse();",
+            "itemtype": "method",
+            "name": "collapse",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 103,
+            "description": "This method is a user interaction method to set the state of the panel.\nThe state open is the default state of the panel.\n\t  \t\n\t  \t// New panel instance with a default state open\n\t  \tvar panel1 = jsCow.get(jsCow.res.components.panel, { \n\t\t\ttitle: 'CollapsedPanel',\n\t\t\topen: true\n\t\t});\n\t\t\n\t  \t// Set panel state to open\n\t  \tpanel1.open();",
+            "itemtype": "method",
+            "name": "open",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 129,
+            "description": "This method is a user interaction method to toggle the state of the panel.\nThe toggle method will switch the state between open and callapsed. \n\t  \t\n\t  \t// Toggle th panel state\n\t  \tpanel.toggle();",
+            "itemtype": "method",
+            "name": "toggle",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 162,
+            "description": "JSON object with all model data.\nDefault model data are:\n\t\t\n\t\t{\n\t\t\tenabled: true,\n\t\t\tvisible: true,\n\t\t\ttitle: \"\",\n\t\t\tcollapsed: false\n\t\t}",
+            "itemtype": "property",
+            "name": "data",
+            "type": "Object",
+            "class": "jsCow.res.model.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 188,
+            "description": "The model init method will only trigger the internal component event 'model.ready'.\nThe event data are the model data.\nDefault listener for this event is registered in the controller of the component. \n\t  \t\n\t  \tthis.trigger(\"model.ready\", this.data);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "private",
+            "tagname": "",
+            "class": "jsCow.res.model.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 217,
+            "description": "Objekt for all needed HTML-DOM elements of the component.",
+            "itemtype": "property",
+            "name": "dom",
+            "type": "Object",
+            "default": "{} Object",
+            "class": "jsCow.res.view.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 226,
+            "description": "Represents the html main container of the component.",
+            "itemtype": "property",
+            "name": "dom.main",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 235,
+            "description": "Represents the inner html container of the component.\nThe button component do not need and not use this property. Therefore its commented out.",
+            "itemtype": "property",
+            "name": "dom.content",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 248,
+            "description": "The view init method can used to set default view properties.\nBy trigger the event 'model.ready' the controller will trigger the event 'view.init' to call this method.\nThis method register the jquery click event on the panel title element, set the title text and update the view.",
+            "itemtype": "method",
+            "name": "init Set the jquery click event on the panel title element and trigger the component event 'view.update'.",
+            "class": "jsCow.res.view.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 274,
+            "description": "The view update method will update the complete component view by trigger the event 'view.update' with all available model data.\n\t  \t\n\t  \tthis.trigger(\n\t  \t\t\"view.update\", \n\t  \t\tthis.cmp().config()\n\t  \t);",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.view.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 330,
+            "description": "The controller init method register all needed events within the controller and provides all related event handler.\n\n\t  \t// Code examples\n\t  \tthis.on(\"model.ready\", this.isModelReady);\n\t\tthis.on(\"title\", this.title);\n\t\tthis.on(\"collapse\", this.collapse);\n\t\tthis.on(\"open\", this.open);\n\t\tthis.on(\"toggle\", this.toggle);",
+            "itemtype": "method",
+            "name": "init",
+            "class": "jsCow.res.controller.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 352,
+            "description": "The controller isModelReady method is an event handler and will be triggert by the event 'model.ready' with all available model data.\nIs the model ready the 'view.init' event will triggert by this handler with all available model data again.\n\t  \t\n\t  \tthis.trigger(\n\t\t\t\"view.init\", \n\t\t\tthis.cmp().config()\n\t\t);",
+            "itemtype": "method",
+            "name": "isModelReady",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 373,
+            "description": "The controller title method is an event handler and will only set the title for the panel.\nThis handler will be triggert by the component specific event 'title'.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\ttitle: e.data.title\n\t\t});",
+            "itemtype": "method",
+            "name": "title",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 392,
+            "description": "The controller collapse method is an event handler and will only set the collapse for the panel.\nThis handler will be triggert by the component specific event 'collapse'.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\tcollapsed: true\n\t\t});",
+            "itemtype": "method",
+            "name": "collapse",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 411,
+            "description": "The controller open method is an event handler and will only set the open for the panel.\nThis handler will be triggert by the component specific event 'open'.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\tcollapsed: false\n\t\t});",
+            "itemtype": "method",
+            "name": "open",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.panel"
+        },
+        {
+            "file": "src\\jscow\\components\\panel.js",
+            "line": 430,
+            "description": "The controller toggle method is an event handler and will only set the toggle for the panel.\nThis handler will be triggert by the component specific event 'toggle'.",
+            "itemtype": "method",
+            "name": "toggle",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.panel"
+        }
+    ],
+    "warnings": []
+}
