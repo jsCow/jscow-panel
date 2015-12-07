@@ -2,7 +2,7 @@
     "project": {
         "name": "jscow-panel",
         "description": "jsCow - Panel - Javascript Component Framework",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "url": ""
     },
     "files": {

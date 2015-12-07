@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 					},
 					{
 	                    expand: true,
-	                    cwd: 'src/less',
+	                    cwd: 'node_modules/jscow-theme/dist/css/less',
 	                    src: ['**'],
 	                    dest: 'dist/css/less'
 					},
