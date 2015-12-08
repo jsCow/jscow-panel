@@ -1,7 +1,7 @@
 {
   "name": "jscow-panel",
   "description": "jsCow - Panel - Javascript Component Framework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "GPL-3.0+",
   "readme": "README.md",
   "author": "Mario Linz <jscow@gmx.de>",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsCow/jscow-button.git"
+    "url": "https://github.com/jsCow/jscow-panel.git"
   }
 }

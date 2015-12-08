@@ -91,6 +91,7 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'node_modules/jscow/dist/jscow/jscow.min.js',
+					'node_modules/jscow-*/src/jscow/components/*.js',
 					'node_modules/jscow-*/dist/jscow/components/*.min.js',
 					'src/jscow/components/*.js',
 				],
